@@ -1,0 +1,23 @@
+{
+  "name": "simple-virtual-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jin5354/simple-virtual-dom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jin5354/simple-virtual-dom/issues"
+  },
+  "homepage": "https://github.com/jin5354/simple-virtual-dom#readme",
+  "dependencies": {
+    "simp-html-parser": "^0.1.0"
+  }
+}

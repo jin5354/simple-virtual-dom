@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "lib":[
+      "esnext"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}
