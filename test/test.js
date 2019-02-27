@@ -1,5 +1,5 @@
-import parse, {ElementNode, TextNode, CommentNode} from '../node_modules/simp-html-parser/dist/index.js'
-import {createDOM, updateElement} from '../src/index'
+import parse from 'simp-html-parser'
+import {updateElement} from '../src/index'
 
 const $app = document.getElementById('app')
 
@@ -12,11 +12,9 @@ const template = `<ul class="list">
 const vdom = parse(template)[0]
 console.log('vdom:', vdom)
 
-let realDom = createDOM(vdom)
+updateElement($app, vdom)
 
-$app.appendChild(realDom)
-
-const template2 = `<ul class="list">
+const template2 = `<ul class="list" tag="new">
   <!-- test comment -->
   <li>item 1</li>
   <li>item 3</li>
